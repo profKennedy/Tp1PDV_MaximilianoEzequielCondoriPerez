@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainPanel : MonoBehaviour
 {
@@ -19,5 +20,9 @@ public class MainPanel : MonoBehaviour
         opcionPanel.SetActive(false);
 
         panel.SetActive(true);
+    }
+    public void PlayLevel(string nombreNivel)
+    {
+        SceneManager.LoadScene(nombreNivel);
     }
 }

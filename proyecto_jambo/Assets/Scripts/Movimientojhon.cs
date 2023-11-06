@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Movimientojhon : MonoBehaviour
 {
+    public GameObject BalaPrefab;
     public float fuerzaSalto;
     private Rigidbody2D Rigidbody2D;
     private float horizontal;
     private bool Choque;
     private Animator animator;
+   // private float UltimoDisparo;
     void Start()
     {
         /* estas son las llamadas a los componentes, de esta forma accedemos mediante variables a los componentes que estan en el inspector**/
@@ -35,13 +37,34 @@ public class Movimientojhon : MonoBehaviour
         {
             Saltar();
         }
+        if (Input.GetKeyDown(KeyCode.Space) /*Time.time>UltimoDisparo+0.25f*/)
+        {
+            disparar();
+            //UltimoDisparo = Time.time;
+        }
     }
     private void Saltar()
     {
         Rigidbody2D.AddForce(Vector2.up*fuerzaSalto);
     }
+
+
+    private void disparar()
+    {
+        Vector3 direccion;
+        if (transform.localScale.x == 1.0f) direccion = Vector3.right;
+        else direccion = Vector3.left;
+        GameObject bala= Instantiate(BalaPrefab, transform.position+direccion*0.1f, Quaternion.identity);
+        bala.GetComponent<ScriptBala>().SetDireccion(direccion);
+    }
+
+
+
+
     private void FixedUpdate()
     {
         Rigidbody2D.velocity = new Vector2(horizontal, Rigidbody2D.velocity.y);
     }
+
+
 }
