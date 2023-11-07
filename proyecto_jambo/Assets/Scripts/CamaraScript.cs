@@ -7,10 +7,12 @@ public class CamaraScript : MonoBehaviour
     public GameObject Jhon;
     void Update()
     {
-        Vector3 posicion = transform.position;
-        posicion.x = Jhon.transform.position.x;
-        //posicion.y = Jhon.transform.position.y;
-        transform.position = posicion;
-        
+        if (Jhon != null)
+        {
+            Vector3 posicion = transform.position;
+            posicion.x = Jhon.transform.position.x;
+            //posicion.y = Jhon.transform.position.y;
+            transform.position = posicion;
+        }
     }
 }

@@ -10,6 +10,7 @@ public class Movimientojhon : MonoBehaviour
     private float horizontal;
     private bool Choque;
     private Animator animator;
+    private int Vida=3;
    // private float UltimoDisparo;
     void Start()
     {
@@ -55,7 +56,7 @@ public class Movimientojhon : MonoBehaviour
         if (transform.localScale.x == 1.0f) direccion = Vector3.right;
         else direccion = Vector3.left;
         GameObject bala= Instantiate(BalaPrefab, transform.position+direccion*0.1f, Quaternion.identity);
-        bala.GetComponent<ScriptBala>().SetDireccion(direccion);
+        bala.GetComponent<ScriptBala>().SetDireccion(direccion);// aqui se llama a la funcion de ScripBala para dale la direccion del jugador
     }
 
 
@@ -63,7 +64,12 @@ public class Movimientojhon : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Rigidbody2D.velocity = new Vector2(horizontal, Rigidbody2D.velocity.y);
+        Rigidbody2D.velocity = new Vector2(horizontal, Rigidbody2D.velocity.y);//se utiliza solo para el movimiento del jugador sea mas fluido
+    }
+    public void Golpear()
+    {
+        Vida = Vida - 1;
+        if (Vida == 0) Destroy(gameObject);
     }
 
 

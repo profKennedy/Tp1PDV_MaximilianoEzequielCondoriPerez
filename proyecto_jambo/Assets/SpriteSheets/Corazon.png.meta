@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 439cbdcacd866d746a8efed33536583c
+guid: cc328c6f386b0d0458023a518fef00b5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,97 +117,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_weapon_bullet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79f06a05ba881a94c9ddece1c5323807
-      internalID: 955088432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_weapon_bullet_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ae50863faaff8e44afc8377defe9e84
-      internalID: 1493167026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_weapon_bullet_2
+      name: Corazon_0
       rect:
         serializedVersion: 2
         x: 16
-        y: 0
-        width: 8
-        height: 8
+        y: 26
+        width: 265
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 15, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbaceeda04774b42a9815137bc8b4b9
-      internalID: 718768685
+      spriteID: ade7d0335fa352c42a25baff23bd4c89
+      internalID: -1505964937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_weapon_bullet_3
+      name: Corazon_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 0
-        width: 8
-        height: 8
+        x: 308
+        y: 22
+        width: 265
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2500f100b329e464bb809183bcd4616c
-      internalID: 412212837
+      spriteID: 485196754c2e51c4197bbf79c96a6d45
+      internalID: -90326863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_weapon_bullet_4
+      name: Corazon_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 8
-        height: 8
+        x: 602
+        y: 19
+        width: 265
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,50 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72e5d0e3de074664abf53d98824b7e8f
-      internalID: -1816300292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_weapon_bullet_5
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2abc40aa12257fa43888bdb1b9a78e5d
-      internalID: 1465063735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_weapon_bullet_6
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a902de7eee7585d4e9d692d0ab5ca1d2
-      internalID: -1939971888
+      spriteID: bf02c3b9f0892b14190a58f67bff50b5
+      internalID: -814007206
       vertices: []
       indices: 
       edges: []
@@ -274,13 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      enemy_weapon_bullet_4: -1816300292
-      enemy_weapon_bullet_5: 1465063735
-      enemy_weapon_bullet_6: -1939971888
-      enemy_weapon_bullet_1: 1493167026
-      enemy_weapon_bullet_0: 955088432
-      enemy_weapon_bullet_2: 718768685
-      enemy_weapon_bullet_3: 412212837
+      Corazon_2: -814007206
+      Corazon_0: -1505964937
+      Corazon_1: -90326863
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
