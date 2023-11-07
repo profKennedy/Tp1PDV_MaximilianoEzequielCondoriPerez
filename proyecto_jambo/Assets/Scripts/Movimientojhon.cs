@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movimientojhon : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class Movimientojhon : MonoBehaviour
     private float horizontal;
     private bool Choque;
     private Animator animator;
-    private int Vida=3;
+    private int Vida = 3;
+    public string nombre;
    // private float UltimoDisparo;
     void Start()
     {
@@ -43,6 +45,7 @@ public class Movimientojhon : MonoBehaviour
             disparar();
             //UltimoDisparo = Time.time;
         }
+        caerse();
     }
     private void Saltar()
     {
@@ -69,8 +72,23 @@ public class Movimientojhon : MonoBehaviour
     public void Golpear()
     {
         Vida = Vida - 1;
-        if (Vida == 0) Destroy(gameObject);
+        if (Vida == 0)
+        {
+            Destroy(gameObject);
+            ChangeScene(nombre);
+        }
     }
-
+    public void ChangeScene(string nombreNivel)
+    {
+        SceneManager.LoadScene(nombreNivel);
+    }
+    public void caerse()
+    {
+        if (transform.position.y<-2.0f)
+        {
+            Vida = 0;
+            ChangeScene(nombre);
+        }
+    }
 
 }

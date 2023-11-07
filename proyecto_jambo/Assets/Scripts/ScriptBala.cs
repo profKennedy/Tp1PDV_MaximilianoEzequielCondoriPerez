@@ -29,11 +29,13 @@ public class ScriptBala : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        ScriptBoss Boss= collision.GetComponent<ScriptBoss>();
         Movimientojhon jhon = collision.GetComponent<Movimientojhon>();//obtenemos los scripts de jhon como del Enemigo
         MovimientoEnemigo Enemigo = collision.GetComponent<MovimientoEnemigo>();
         /*preguntamos si jhon o el enemigo existen y si lo hacen llaman a la funcion Golpear hasta que se les agote la vida*/
         if (jhon != null) jhon.Golpear();
         if (Enemigo != null) Enemigo.Golpear();
+        if (Boss != null) Boss.Golpear();
         DestruirBala();
     }
 }
